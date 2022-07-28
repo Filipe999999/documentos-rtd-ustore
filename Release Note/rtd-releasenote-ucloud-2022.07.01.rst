@@ -203,11 +203,7 @@ Na continuação do exemplo acima, esta corporação multinacional cria as “co
 Abaixo apresentamos uma ilustração que apresenta o conceito completo da abrangência da funcionalidade ***Account*** implementada na Plataforma uCloud. Os nomes e denominações utilizados são meramente ilustrativos.
 
 
-<<<<<<< HEAD
-.. image:: /Documentos/Imagem/Imagem1.png
-=======
-.. image:: /Documento/Imagem/Imagem1.png
->>>>>>> 9b955848759bec8fa09b6a0a2b3eeeebf8880ce5
+.. image:: /Imagem/Imagem1.png
 
 
 As Contas Producer podem ter um administrador ou mais (neste nível o perfil deste usuário é de um Administrador do Sistema - ex.: root), os contratos param de ser criados quando o recurso da conta corporativa acaba, os perfis de visualização e permissionamento obedecem a regra de negócio aplicada pela conta integrator.
@@ -229,7 +225,7 @@ No cenário de qualquer tipo de nuvem, o dado contido nas *TAGs* é utilizado ju
 
 Estas TAGs (etiquetas) após vinculadas a um recurso  são utilizadas para categorizar estes recursos para que possam ser classificados por: finalidade, propriedade, critério ou localidade. Por exemplo: o usuário ou a organização, podem definir um conjunto de *TAGs* para as instâncias do Amazon EC2, da sua conta, para auxiliar a rastrear o proprietário e/ou o nível do agrupamento (empilhamento de valores - stack) de cada recurso computacional de nuvem pública consumido.
 
-.. image:: /Documentos/Imagem/Imagem2.png
+.. image:: /Imagem/Imagem2.png
 
 Na imagem acima utilizamos duas máquinas virtuais como exemplo para ilustrar a vinculação de TAG a recursos. Um detalhe que é muito pouco mencionado é que os provedores de serviço de nuvem pública não permitem vincular TAGs a todos os seus produtos e/ou serviços (consulte a documentação do provedor para saber quais recursos são passíveis de terem uma TAG vinculada ao recurso).
 
@@ -357,7 +353,7 @@ Podemos resumir que o processo de utilização da funcionalidade de TAGs Virtuai
 
 A seguir a tela que apresenta a nova implementação no portal uCloud:
 
-.. image:: /Documentos/Imagem/Imagem3.png
+.. image:: /Imagem/Imagem3.png
 
 Com a adição da nova funcionalidade no portal e a possibilidade de empregar as “TAGs Virtuais” para recuperar a informação previamente tagueada do recurso utilizado em qualquer provedor de nuvem, de forma única, onde a utilização pode ocorrer em dois fluxos, a seguir detalhados:
 
@@ -365,9 +361,9 @@ Com a adição da nova funcionalidade no portal e a possibilidade de empregar as
 
    #. Para esse fluxo o usuário pode especificar, por exemplo, que o recurso pertencente ao ProductName Amazon Elastic Compute Cloud, no [ProductFamily] Data Transfer, vinculado ao identificador da nuvem i-0e85640d78d096974 tenha as TAGs especificadas no formulário, mesmo que essas TAGs não sejam fornecidas pela nuvem.
 
-.. image:: /Documentos/Imagem/Imagem4.png
+.. image:: /Imagem/Imagem4.png
 
-.. image:: /Documentos/Imagem/Imagem5.png
+.. image:: /Imagem/Imagem5.png
 
 2. Normalização das TAGs para recursos onde na família dos produtos não é retornado TAGs pela nuvem.
 
@@ -379,7 +375,7 @@ Com a adição da nova funcionalidade no portal e a possibilidade de empregar as
 
 No momento de exportar o relatório de faturamento as “TAGs Virtuais” retornam normalizadas, de acordo com os recursos usados nas TAGs.
 
-.. image:: /Documentos/Imagem/Imagem6.png
+.. image:: /Imagem/Imagem6.png
 
 A figura acima apresenta a aplicação das “TAGs virtuais'', por meio do Accountant *virtual-tag-applier*, e sua normalização, utilizando o Accountant *virtual-tag-normalizer*.
 
