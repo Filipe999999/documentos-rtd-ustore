@@ -203,7 +203,11 @@ Na continuação do exemplo acima, esta corporação multinacional cria as “co
 Abaixo apresentamos uma ilustração que apresenta o conceito completo da abrangência da funcionalidade ***Account*** implementada na Plataforma uCloud. Os nomes e denominações utilizados são meramente ilustrativos.
 
 
+<<<<<<< HEAD
 .. image:: /Documentos/Imagem/Imagem1.png
+=======
+.. image:: /Documento/Imagem/Imagem1.png
+>>>>>>> 9b955848759bec8fa09b6a0a2b3eeeebf8880ce5
 
 
 As Contas Producer podem ter um administrador ou mais (neste nível o perfil deste usuário é de um Administrador do Sistema - ex.: root), os contratos param de ser criados quando o recurso da conta corporativa acaba, os perfis de visualização e permissionamento obedecem a regra de negócio aplicada pela conta integrator.
