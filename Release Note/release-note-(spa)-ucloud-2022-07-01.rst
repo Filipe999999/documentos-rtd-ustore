@@ -190,14 +190,14 @@ Existen dos clases de "*Contas*" que se clasifican en dos tipos, las cuentas de 
 
   * **Por ejemplo**: 
 
-   Para el caso de una **corporación** multinacional que utiliza una cuenta Integrator, se puede considerar una "Cuenta Integrator" para los países que la componen: México, Brasil, Chile y Colombia.
+Para el caso de una **corporación** multinacional que utiliza una cuenta Integrator, se puede considerar una "Cuenta Integrator" para los países que la componen: México, Brasil, Chile y Colombia.
    La corporación es responsable de crear otras cuentas y escalar los permisos de otros usuarios. Tiene como particularidad la lista de todas las cuentas Producer, la lista de todos los contratos asociados y puede aplicar las reglas de negocio.
 
 * \ B. \ **Cuenta Producer** Esta cuenta Producer pertenece a la organización que consume el recurso, representa una unidad de agrupación menor y puede operar todo el portal.
 
   * **Por ejemplo**: 
   
-   En la continuación del ejemplo anterior, esta corporación multinacional crea las "cuentas Producer" para las organizaciones que pertenecen a ella dentro de un determinado país que se ha mencionado anteriormente, en Brasil, la organización posee las empresas A y B que gestionan los contratos a1 y b1.
+En la continuación del ejemplo anterior, esta corporación multinacional crea las "cuentas Producer" para las organizaciones que pertenecen a ella dentro de un determinado país que se ha mencionado anteriormente, en Brasil, la organización posee las empresas A y B que gestionan los contratos a1 y b1.
 
 A continuación se muestra una ilustración que presenta el concepto completo del alcance de la funcionalidad **Account** implementada en la Plataforma uCloud. Los nombres y denominaciones utilizados son meramente ilustrativos.
 
