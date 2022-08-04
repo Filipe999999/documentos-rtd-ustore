@@ -351,21 +351,21 @@ Podemos resumir que el proceso de utilización de la funcionalidad de los TAGs v
 
 #. **Creación y automatización del uso de TAGs Virtuales**
 
-  \ a. \ Aprovisionar un nombre de identificación para **un único** perfil de TAGs virtuales con todas las vinculaciones de TAGs basadas en la combinación de *Product Name* y/o *ProductFamily* y/o *Identificador del Recurso*.
+ \ a. \ Aprovisionar un nombre de identificación para **un único** perfil de TAGs virtuales con todas las vinculaciones de TAGs basadas en la combinación de *Product Name* y/o *ProductFamily* y/o *Identificador del Recurso*.
 
-  \ b. \ Vincular Perfil de TAGs Virtuales al identificador de la nube (*container*)
+ \ b. \ Vincular Perfil de TAGs Virtuales al identificador de la nube (*container*)
 
-  \ c. \ Realizar el procesamiento y la sincronización de los archivos de *Billing/Bucket*
+ \ c. \ Realizar el procesamiento y la sincronización de los archivos de *Billing/Bucket*
 
-  \ d. \ Visualización de los informes financieros en la plataforma uCloud usando la totalización por **TAGs**.
+ \ d. \ Visualización de los informes financieros en la plataforma uCloud usando la totalización por **TAGs**.
 
-  \ e. \ Si se identifica que todavía hay recursos SIN TAGs (recordemos la existencia de algunos recursos que el proveedor de servicios en la nube pública no vincula a ningún TAG; o que la combinación de *ProductName*, *ProductFamily*, *Identificador del Recurso*, no fue suficiente para asociar la totalidad de las líneas del archivo de *billing*), la Plataforma uCloud permite abordar esta ausencia de TAGs con el proceso siguiente.
+ \ e. \ Si se identifica que todavía hay recursos SIN TAGs (recordemos la existencia de algunos recursos que el proveedor de servicios en la nube pública no vincula a ningún TAG; o que la combinación de *ProductName*, *ProductFamily*, *Identificador del Recurso*, no fue suficiente para asociar la totalidad de las líneas del archivo de *billing*), la Plataforma uCloud permite abordar esta ausencia de TAGs con el proceso siguiente.
 
 2. **Normalización de TAGs Virtuales**
 
-  \ a. \ Este proceso sólo debe aplicarse cuando la combinación existente en el perfil de TAGs virtuales no puede aplicar TAGs a todos los recursos.
+ \ a. \ Este proceso sólo debe aplicarse cuando la combinación existente en el perfil de TAGs virtuales no puede aplicar TAGs a todos los recursos.
 
-  \ b. \ Este proceso debe ejecutarse SÓLO UNA VEZ al mes, ya que lleva un cierto tiempo para completar la normalización de todas las líneas de billing en el período del mes en curso. Este proceso debe *iniciarse manualmente y normaliza los TAGS virtuales sólo para un único periodo, no es recurrente ni automático*.
+ \ b. \ Este proceso debe ejecutarse SÓLO UNA VEZ al mes, ya que lleva un cierto tiempo para completar la normalización de todas las líneas de billing en el período del mes en curso. Este proceso debe *iniciarse manualmente y normaliza los TAGS virtuales sólo para un único periodo, no es recurrente ni automático*.
 
 A continuación se muestra la pantalla con la nueva implementación en el portal uCloud:
 
@@ -375,19 +375,19 @@ Con la incorporación de la nueva funcionalidad en el portal y la posibilidad de
 
 #. Etiquetaje de recursos en la nube a través de la especificación de un [**ProductName**], [**ProductFamily**] y el [**Identificador de la Nube**].
 
-  \ a. \ Para este flujo el usuario puede especificar, por ejemplo, que el recurso perteneciente al *ProductName Amazon Elastic Compute Cloud*, en [*ProductFamily*] **Data Transfer**, vinculado al identificador de la nube i-0e85640d78d096974 tenga los TAGs especificados en el formulario, aunque estos TAGs no sean proporcionados por la nube.
+ \ a. \ Para este flujo el usuario puede especificar, por ejemplo, que el recurso perteneciente al *ProductName Amazon Elastic Compute Cloud*, en [*ProductFamily*] **Data Transfer**, vinculado al identificador de la nube i-0e85640d78d096974 tenga los TAGs especificados en el formulario, aunque estos TAGs no sean proporcionados por la nube.
 
 IMAGEM 5
 
 IMAGEM 6
 
-  \ B. \ Vincular el perfil de TAGs Virtuales creado, a la nube (*container*) aprovisionada en la plataforma uCloud
+ \ B. \ Vincular el perfil de TAGs Virtuales creado, a la nube (*container*) aprovisionada en la plataforma uCloud
 
 IMAGEM 7
 
 2. Normalización de TAGs para los recursos de nube no recuperados en TAG categorizada.
 
-  \ a. \ Para este flujo, será posible habilitar que en el momento de la recolección de los datos de facturación de la nube, los recursos obtenidos que no vengan por defecto con el TAG del proveedor de la nube, sean normalizados con los TAGs que estén asociados a este recurso.
+ \ a. \ Para este flujo, será posible habilitar que en el momento de la recolección de los datos de facturación de la nube, los recursos obtenidos que no vengan por defecto con el TAG del proveedor de la nube, sean normalizados con los TAGs que estén asociados a este recurso.
 
   * Si ya existe un TAG con la misma clave en el otro lado, el TAG no será sobrescrito.
    
