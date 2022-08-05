@@ -173,7 +173,7 @@ En el portal, los Tiers se clasifican en los niveles 1 a 10 (de la A a la J) y s
 
 TABELA 1
 
-   ATENCIÓN: Todas las cantidades y valores mostrados arriba son meramente ilustrativos, sirven sólo como ejemplos.
+   ..ATENCIÓN:: ATENCIÓN: Todas las cantidades y valores mostrados arriba son meramente ilustrativos, sirven sólo como ejemplos.
 
 **Ejemplo de casos de uso**:
 
