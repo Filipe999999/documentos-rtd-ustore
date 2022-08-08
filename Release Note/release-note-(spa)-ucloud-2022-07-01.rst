@@ -5,6 +5,8 @@ uCloud - Notas Mayo - 2022
    :alt: Logo uCLoud
    :scale: 50 %
    :align: center
+   
+----
 
 Plataforma uCloud versão: *update tag 5.2-b35*
 
@@ -185,12 +187,12 @@ En el portal, los Tiers se clasifican en los niveles A a J (1 a 10) y se calcula
 | **Valor Mensal**   | $1.500 | $3.000 | $4.000 | $6.000 | $8.000 | $16.000 | $24.000 | $32.000 | $40.000 | $64.000 |
 +--------------------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+
 
+.. attention:: Todas las cantidades y valores mostrados arriba son meramente ilustrativos, sirven sólo como ejemplos.
 
-  ATENCIÓN: Todas las cantidades y valores mostrados arriba son meramente ilustrativos, sirven sólo como ejemplos.
+Ejemplo de casos de uso
+-----------------------
 
-**Ejemplo de casos de uso**:
-
-* Contrato Empresa Galáxia (cant. VMs 20):
+* *Contrato Empresa Galáxia (cant. VMs 20)*:
 
 Sólo con el fin de ejemplificar un escenario, vamos a describir la oferta de servicios utilizando la Plataforma uCloud en la modalidad SaaS (Software como Servicio) para la empresa Galáxia, y en su "*Conta*" hay 20 máquinas virtuales (activas y gestionadas por la Plataforma uCloud), se ajusta al nivel Tier "A" - siendo el valor mensual a invertir por la empresa Galáxia de R$ 1.500 reales o dólares (dependiendo del país en el que esté establecida la empresa). Una observación importante, si la cuenta utiliza sólo 18 máquinas, seguirá siendo clasificada como Tier "A".
 
@@ -201,20 +203,23 @@ Existen dos clases de "*Contas*" que se clasifican en dos tipos, las cuentas de 
 
 * \ A. \ **Cuenta Integrator** Esta cuenta es la responsable de crear los perfiles de las cuentas Integrator y Producer, al crear estos perfiles alimenta los tiers y paquetes, además de establecer, la cuenta Producer su regla de uso. Para ejemplificar: funciona como una especie de *cluster*, aglomerando o categorizando otras corporaciones.
 
-  * **Por ejemplo**: 
+  * Por ejemplo: 
 
   Para el caso de una **corporación** multinacional que utiliza una cuenta Integrator, se puede considerar una "Cuenta Integrator" para los países que la componen: México, Brasil, Chile y Colombia.
   La corporación es responsable de crear otras cuentas y escalar los permisos de otros usuarios. Tiene como particularidad la lista de todas las cuentas Producer, la lista de todos los contratos asociados y puede aplicar las reglas de negocio.
 
 * \ B. \ **Cuenta Producer** Esta cuenta Producer pertenece a la organización que consume el recurso, representa una unidad de agrupación menor y puede operar todo el portal.
 
-  * **Por ejemplo**: 
+  * Por ejemplo: 
   
   En la continuación del ejemplo anterior, esta corporación multinacional crea las "cuentas Producer" para las organizaciones que pertenecen a ella dentro de un determinado país que se ha mencionado anteriormente, en Brasil, la organización posee las empresas A y B que gestionan los contratos a1 y b1.
 
 A continuación se muestra una ilustración que presenta el concepto completo del alcance de la funcionalidad **Account** implementada en la Plataforma uCloud. Los nombres y denominaciones utilizados son meramente ilustrativos.
 
-IMAGEM 1
+.. figure:: /figuras/ucloud_arquitetura_conceitual003.png
+   :align: center
+   
+----
 
 Las cuentas Producer pueden tener un administrador o más (en este nivel el perfil de este usuario es de un Administrador del Sistema - por ejemplo, root), los contratos dejan de ser creados cuando el recurso de la cuenta corporativa termina, los perfiles de visualización y permisos obedecen a la regla de negocio aplicada por la cuenta Integrator.
 
@@ -235,9 +240,12 @@ En el escenario de cualquier tipo de nube, los datos contenidos en los *TAGs* se
 
 Estos *TAGs* (etiquetas), una vez vinculados a un recurso, se utilizan para categorizar dichos recursos de manera que puedan ser clasificados por: propósito, propiedad, criterio o ubicación. Por ejemplo, el usuario, o la organización, pueden definir un conjunto de *TAGs* para las instancias de Amazon EC2, de su cuenta, para ayudar a rastrear el propietario y/o el nivel de agrupación (apilamiento de valores - stack) de cada recurso computacional de la nube pública consumido.
 
-IMAGEM 2
+.. figure:: /figuras/ucloud_menu_configuracao_tag_virtual001.png
+   :align: center
 
-   Nota: La figura de arriba es un ejemplo y las informaciones son meramente ilustrativas
+----
+
+.. note:: La figura de arriba es un ejemplo y las informaciones son meramente ilustrativas.
 
 En la imagen de arriba utilizamos dos máquinas virtuales como ejemplo para ilustrar la vinculación de *TAGs* a los recursos. Un detalle que se menciona muy poco es que los proveedores de servicios en la nube pública *no permiten vincular TAGs a todos sus productos y/o servicios* (consulte la documentación del proveedor para saber cuáles son los recursos susceptibles de tener un *TAG* vinculado al recurso).
 
@@ -245,9 +253,7 @@ En el ejemplo de arriba vinculamos "**dos** *TAGs* diferentes" al mismo recurso 
 
 Pero debemos señalar que para el ambiente del proveedor de servicios en la nube pública, una vez que se crea un *TAG* éste no estará automáticamente vinculado a cualquier recurso (o servicios derivados de la existencia del recurso). El usuario debe crear primero el/los *TAG(s)* y después vincular manualmente el/los *TAG(s)* al/los recurso(s) deseado(s). Como se trata de un proceso manual y realizado por un usuario en la consola del proveedor de servicios en la nube, el recurso de los *TAGs* puede consumir mucho tiempo del administrador de costes de la nube pública. Puede existir una cantidad muy grande de líneas en el archivo de *billing/bucket* para el Administrador de Costos verificar. Este proceso de verificación y vinculación de *TAGs* es continuo y manual.
 
-   Nota importante:
-
-   Debido a que los TAGs son accesibles a muchos servicios en los proveedores de la nube, es relevante evitar añadir datos privados o confidenciales a los TAGs virtuales, como por ejemplo: identificación personal, información confidencial o sensible.
+.. important:: Debido a que los TAGs son accesibles a muchos servicios en los proveedores de la nube, es relevante evitar añadir datos privados o confidenciales a los TAGs virtuales, como por ejemplo: identificación personal, información confidencial o sensible.
 
 La Plataforma uCloud sincroniza y recibe el contenido del archivo de *billing* (CSV) del proveedor de servicios en la nube pública y, en consecuencia, recibe todos los TAGs existentes en el proveedor.
 
@@ -262,9 +268,12 @@ El procesamiento de *TAGs virtuales* de la Plataforma uCloud, puede vincular aut
 
 Veamos a continuación cómo la nueva implementación de *TAGs Virtuales* permite automatizar la vinculación de *TAGs* en los recursos.
 
-TABELA 2
+.. figure:: /figuras/ucloud_menu_configuracao_tag_virtual002.png
+   :align: center
 
-   Nota: La figura de arriba es un ejemplo y las informaciones son meramente ilustrativas
+----
+
+.. note:: La figura de arriba es un ejemplo y las informaciones son meramente ilustrativas.
 
 En el ejemplo anterior, siempre que la Plataforma uCloud efectúe la sincronización del archivo CSV de *billing/bucket*, **automáticamente** los *TAGs* serán vinculados para todos los registros (filas) de recursos en el archivo de *billing* para los que la correlación de *Product Name* o *Product Family* o *Identificador de Recurso* sea encontrada.
 
@@ -287,9 +296,12 @@ Para cubrir este vacío existe la nueva funcionalidad de **Normalización de TAG
 
 Este proceso realiza una comparación de cada línea del archivo de *billing* y cuando encuentra un recurso "sin TAG Virtual" pero esta línea es un nuevo servicio/producto de un recurso con TAG Virtual, este proceso **HACE UNA COPIA** del TAG Virtual del recurso principal aunque su combinación de *ProductName*, *ProductFamily*, *Identificador del Recurso* no haya podido vincular el TAG Virtual.
 
-IMAGEM 3
+.. figure:: /figuras/ucloud_menu_configuracao_tag_virtual003.png
+   :align: center
 
-   Nota: La tabla de arriba es un ejemplo y las informaciones son meramente ilustrativas
+----
+
+.. note:: La tabla de arriba es un ejemplo y las informaciones son meramente ilustrativas
 
 Este proceso puede llevar algún tiempo, ya que se realiza con la comparación de *string* de caracteres de cada línea de **billing** de forma individual. 
 
@@ -310,8 +322,7 @@ Al aplicar "TAGs virtuales" a los recursos de la nube (por ejemplo, bases de dat
 
 La nueva implementación del portal uCloud permite presentar informes en el reporte financiero generado de acuerdo a lo clasificado o "etiquetado" por el usuario para agrupar o identificar informaciones, sea por nombre de producto, propósito, propiedad, criterio o ubicación, entre otros.
 
-   Nota:
-   Las claves y los valores de los TAGs pueden o no reflejarse en el informe (report) de facturación (billing) de las distintas nubes. Los TAGs no tienen significado semántico en Amazon EC2, se interpretan como una cadena de caracteres
+.. note:: Las claves y los valores de los TAGs pueden o no reflejarse en el informe (report) de facturación (billing) de las distintas nubes. Los TAGs no tienen significado semántico en Amazon EC2, se interpretan como una cadena de caracteres.
 
 Así, los recursos importados del archivo de *billing* de las nubes públicas que por alguna política de estos proveedores no indexen la etiqueta al recurso del servicio en la nube, pueden recibir un "*TAG virtual*" dentro del portal.
 
@@ -322,8 +333,6 @@ En el caso de la aplicación de "TAGs virtuales", hay algunos consejos básicos 
 
 * Número máximo de TAGs por recurso: 50
 
-* En todos los recursos, cada clave de la etiqueta debe ser exclusiva y sólo puede tener un valor.
-
 * Tamaño máximo de la clave: 128 caracteres
 
 * Tamaño máximo del valor: 256 caracteres
@@ -333,10 +342,12 @@ En el caso de la aplicación de "TAGs virtuales", hay algunos consejos básicos 
   * Los caracteres permitidos en los servicios son: letras (a-z, A-Z), números (0-9) y espacios representables, así como los siguientes caracteres: + - = . _ : / @.
    
   * Para habilitar las etiquetas de instancia en los metadatos, las claves de las etiquetas de instancia permiten utilizar letras (a-z, A-Z), números (0-9) y los siguientes caracteres:+ - = . , _ : @. Evite los espacios o /, y no puede formar sólo . (un punto), .. (dos puntos) o _index.
+  
+.. note:: En todos los recursos, cada clave de la etiqueta debe ser exclusiva y sólo puede tener un valor.
  
-* Las claves y los valores de los TAGs distinguen entre mayúsculas y minúsculas.
+.. important:: Las claves y los valores de los TAGs distinguen entre mayúsculas y minúsculas.
 
-* El prefijo aws: se reserva para el uso de AWS. No se puede editar o eliminar la clave o el valor de un TAG cuando tiene una clave TAG con este prefijo. Los TAGs con el prefijo aws: no cuentan para los TAGs de límite de recursos.
+.. warning:: El prefijo aws: se reserva para el uso de AWS. No se puede editar o eliminar la clave o el valor de un TAG cuando tiene una clave TAG con este prefijo. Los TAGs con el prefijo aws: no cuentan para los TAGs de límite de recursos.
 
 ¿Cómo se utiliza?
 -----------------
@@ -355,10 +366,7 @@ Hay algunas estrategias comunes de etiquetaje que ayudan en la identificación y
 
 Los TAGs adicionales son más eficientes para crear agrupaciones, TAGs técnicos, TAGs de automatización, TAGs comerciales y TAGs de seguridad. Entre ellas se encuentran: Nombre, ID de la aplicación, Rol de la aplicación, Cluster, Ambiente, Versión, Fecha/Hora, Aceptación/Rechazo, Seguridad, Proyecto. Propietario, centro de Costes/Unidad de negocio, Cliente, Confidencialidad y Conformidad.
 
-   Nota sobre el comportamiento del TAG en la nube de AWS
-
-   Los TAGs creados por el sistema que comienzan con aws: están reservados para el uso de AWS, no se puede editar o eliminar un TAG que comience con el prefijo aws. 
-   En cuanto al límite de creación de TAGs, cada recurso puede tener un máximo de 50 TAGs creados por el usuario.
+.. note:: Comportamiento del TAG en la nube de AWS - Los TAGs creados por el sistema que comienzan con **aws**: están reservados para el uso de AWS, no se puede editar o eliminar un TAG que comience con el prefijo aws. En cuanto al límite de creación de TAGs, cada recurso puede tener un máximo de 50 TAGs creados por el usuario.
 
 Podemos resumir que el proceso de utilización de la funcionalidad de los TAGs virtuales se aplica en dos momentos distintos:
 
@@ -382,7 +390,10 @@ Podemos resumir que el proceso de utilización de la funcionalidad de los TAGs v
 
 A continuación se muestra la pantalla con la nueva implementación en el portal uCloud:
 
-IMAGEM 4
+.. figure:: /figuras/ucloud_menu_configuracao_tag_virtual004.png
+   :align: center
+
+----
 
 Con la incorporación de la nueva funcionalidad en el portal y la posibilidad de emplear los "TAGs Virtuales" para recuperar la información previamente etiquetada del recurso utilizado en cualquier proveedor de la nube, de forma única, donde la utilización puede darse en dos flujos, detallados a continuación:
 
@@ -390,13 +401,22 @@ Con la incorporación de la nueva funcionalidad en el portal y la posibilidad de
 
    \ a. \ Para este flujo el usuario puede especificar, por ejemplo, que el recurso perteneciente al *ProductName Amazon Elastic Compute Cloud*, en [*ProductFamily*] **Data Transfer**, vinculado al identificador de la nube i-0e85640d78d096974 tenga los TAGs especificados en el formulario, aunque estos TAGs no sean proporcionados por la nube.
 
-IMAGEM 5
+.. figure:: /figuras/ucloud_menu_configuracao_tag_virtual005.png
+   :align: center
 
-IMAGEM 6
+----
+
+.. figure:: /figuras/ucloud_menu_configuracao_tag_virtual008.png
+   :align: center
+
+----
 
    \ b. \ Vincular el perfil de TAGs Virtuales creado, a la nube (*container*) aprovisionada en la plataforma uCloud
 
-IMAGEM 7
+.. figure:: /figuras/ucloud_menu_configuracao_tag_virtual009.png
+   :align: center
+
+----
 
 2. Normalización de TAGs para los recursos de nube no recuperados en TAG categorizada.
 
@@ -408,7 +428,10 @@ IMAGEM 7
 
 En el momento de exportar el informe de facturación los "TAGs Virtuales" vuelven normalizados, según los recursos utilizados en los TAGs.
 
-IMAGEM 8
+.. figure:: /figuras/ucloud_menu_configuracao_tag_virtual010.png
+   :align: center
+
+----
 
 La figura de arriba presenta la aplicación de ''TAGs Virtuales'', mediante Accountant *virtual-tag-applier*, y su normalización, utilizando Accountant *virtual-tag-normalizer*.
 
@@ -421,13 +444,16 @@ Este nuevo release de la Plataforma uCloud, ofrece solamente las funcionalidades
 
 A partir de este release notes, nuestro portal da soporte a la nube, proporciona los recursos y funcionalidades de Operación de embitne OCI que se enumeran a continuación:
 
-TABELA
+.. figure:: /figuras/ucloud_oracleoci002.png
+   :align: center
+
+----
 
 Cabe señalar que la lista actual presentada anteriormente está directamente relacionada con la disponibilidad de las funcionalidades presentes en el actual kit de desarrollo de software ( *SDK - Software Development Kit*) publicado por Oracle, utilizado por el equipo de DevOps de Ustore (mayo/2022) para la integración con Oracle Cloud Infrastructure .
 
 El desarrollo continuo promovido por el equipo de DevOps de Ustore, como la ampliación de nuevas funcionalidades presentes en otras evoluciones del SDK Oracle, proporciona la evolución de los *releases* y/o versiones de la Plataforma uCloud, que serán relacionadas en futuros Release Notes de la Plataforma uCloud.
 
-   En el momento presente en este Release Notes (mayo, 2022) la API y el SDK para OCI aún no permiten un soporte completo para la implementación del cobro y el cálculo de billing de la infraestructura presente en el ambiente OCI. Esperamos la evolución del SDK y API Oracle Cloud Infrastructure para implementar la funcionalidad de billing para OCI.
+.. note:: En el momento presente en este Release Notes (mayo, 2022) la API y el SDK para OCI aún no permiten un soporte completo para la implementación del cobro y el cálculo de billing de la infraestructura presente en el ambiente OCI. Esperamos la evolución del SDK y API Oracle Cloud Infrastructure para implementar la funcionalidad de billing para OCI.
 
 Este conjunto de nuevas funcionalidades implementadas y descritas, contenidas en este documento, generaron el desarrollo de esta nueva versión (*update tag 5.2-b35*).  Así, Ustore reafirma su compromiso constante con la evolución de la plataforma y el alineamiento a las necesidades del mercado y de sus clientes.
 
