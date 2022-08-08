@@ -411,7 +411,7 @@ Con la incorporación de la nueva funcionalidad en el portal y la posibilidad de
 
 ----
 
-   \ b. \ Vincular el perfil de TAGs Virtuales creado, a la nube (*container*) aprovisionada en la plataforma uCloud
+   \ b. \ Vincular el perfil de TAGs Virtuales creado, a la nube (*container*) aprovisionada en la plataforma uCloud.
 
 .. figure:: /figuras/ucloud_menu_configuracao_tag_virtual009.png
    :align: center
