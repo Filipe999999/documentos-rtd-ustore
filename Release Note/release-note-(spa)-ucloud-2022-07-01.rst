@@ -11,7 +11,7 @@ uCloud - Notas Mayo - 2022
 Plataforma uCloud versão: *update tag 5.2-b35*
 
 Presentación
-============
+=============
 
 En general, el profesional de la infraestructura de TI utiliza diversas consolas para aprovisionar recursos computacionales, sea dentro de la organización (*datacenter* privado) o en algún proveedor de la nube. La computación en nube es una evolución de los servicios y productos de tecnología de la información bajo demanda, denominada por Brantner et al., 2008 de *Utility Computing*, que tiene como objetivo ofrecer componentes básicos como: almacenamiento, procesamiento y ancho de banda de una red a través de proveedores especializados con un bajo coste por unidad utilizada. En la  contemporaneidad, mantenerse actualizado y preparado en todas las «consoles» es un desafío para este profesional.
 
