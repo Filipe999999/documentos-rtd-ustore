@@ -1,7 +1,12 @@
-Notas Mayo - 2022 
-=================
+uCloud - Notas Mayo - 2022 
+==========================
 
-*update tag 5.2-b35*
+.. figure:: /figuras/ucloud_logo_peq.png
+   :alt: Logo uCLoud
+   :scale: 50 %
+   :align: center
+
+Plataforma uCloud versão: *update tag 5.2-b35*
 
 Presentación
 ============
@@ -33,9 +38,9 @@ Las novedades presentadas a continuación han sido categorizadas en:
 
 Además de las innovaciones más sólidas, enumeradas en tres temas. Estas nuevas implementaciones se describirán en detalle en el transcurso de este documento.
 
-#. *Account* 
-#. *TAGs Virtuales*
-#. *Oracle OPS*
+#. Account
+#. TAGs Virtuales
+#. Oracle OPS
 
 Acciones Correctivas
 ====================
@@ -140,14 +145,14 @@ Descripción de las nuevas implementaciones
 
 A continuación describiremos las características técnicas y operativas de tres de las nuevas implementaciones que se aplicaron para esta nueva versión/*release* de la Plataforma uCloud. En este capítulo se enumeran las nuevas implementaciones, que serán aclaradas a lo largo de este documento.
 
-#. *Account* 
+#. Account
 
-#. *TAGs Virtuales*
+#. TAGs Virtuales
 
-#. *Oracle Cloud Infrastructure (OCI)* - sólo las funcionalidades de operación
+#. Oracle Cloud Infrastructure (OCI) - *sólo las funcionalidades de operación*
 
 Descripción del Account
------------------------
+=======================
 
 La Plataforma uCloud puede implantarse de dos maneras diferentes:
 
@@ -157,7 +162,7 @@ Para el escenario de la instalación dedicada (*on-premises*) la funcionalidad d
 
 \ B. \ Instalación compartida como servicio (*SaaS - Software as a Service*)
 
-La funcionalidad *Account* está pensada para el escenario de instalación compartida (SaaS), donde la empresa (la denominaremos **organización**) tiene como objetivo prestar servicios de *Cloud Service Broker* con la Plataforma uCloud entre sus diversas operaciones (regionales o internacionales) y para sus diversos clientes finales.
+La funcionalidad *Account* está pensada para el escenario de instalación compartida (*SaaS*), donde la empresa (la denominaremos **organización**) tiene como objetivo prestar servicios de *Cloud Service Broker* con la Plataforma uCloud entre sus diversas operaciones (regionales o internacionales) y para sus diversos clientes finales.
 
 El escenario arriba mencionado de la Plataforma uCloud SaaS es ideal para un proveedor de servicios de conectividad/comunicación (*organización*) que puede compartir la Plataforma uCloud entre sus operaciones regionales y también entre sus clientes finales que desean los beneficios de una operación, gobernanza financiera y *billing*.
 
@@ -169,9 +174,17 @@ Esta funcionalidad "Cuentas" tiene como objetivo dar a la organización la posib
 
 Para ejemplificar una forma de cobrar por la "oferta de servicio" de Gestión Centralizada de la Nube por parte de la Plataforma uCloud, utilizaremos el ejemplo de los *niveles de consumo* de la infraestructura computacional basado en el número de Máquinas Virtuales Gestionadas por la Plataforma uCloud, llamado "Tier". Los Tiers representan el modelo de tarificación existente en la funcionalidad "Cuentas", la regla de negocio creada establece la contabilización de los recursos obtenidos y generados por una determinada cuenta.
 
-En el portal, los Tiers se clasifican en los niveles 1 a 10 (de la A a la J) y se calculan en función de las reglas establecidas mediante dos parámetros: - Un determinado número de máquinas virtuales genera un determinado coste máximo (número de máquinas frente a coste/valor). En el caso de una cuenta creada, al alcanzar uno de los parámetros, inmediatamente, la aplicación escala al siguiente nivel. A continuación, se describen los niveles de los Tiers:
+En el portal, los Tiers se clasifican en los niveles A a J (1 a 10) y se calculan en función de las reglas establecidas mediante dos parámetros: - Un determinado número de máquinas virtuales genera un determinado coste máximo *(número de máquinas frente a coste/valor)*. En el caso de una cuenta creada, al alcanzar uno de los parámetros, inmediatamente, la aplicación escala al siguiente nivel. A continuación, se describen los niveles de los Tiers:
 
-TABELA 1
++---------+
+| **Tier**           |  **A** |  **B** |  **C** |  **D** | **E**  |  **F**  |  **G**  |  **H**  |  **I**  |  **J**  |
++====================+========+========+========+========+========+=========+=========+=========+=========+=========+
+|| **Quantidade de** ||       ||       ||       ||       ||       ||        ||        ||        ||        ||        |
+|| **Máqs.Virtuais** || ≤ 20  || ≤ 30  || ≤ 50  || ≤ 75  || ≤ 100 || ≤ 150  || ≤ 200  || ≤ 250  || ≤ 300  || ≤ 500  |
++--------------------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+
+| **Valor Mensal**   | $1.500 | $3.000 | $4.000 | $6.000 | $8.000 | $16.000 | $24.000 | $32.000 | $40.000 | $64.000 |
++--------------------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+
+
 
   ATENCIÓN: Todas las cantidades y valores mostrados arriba son meramente ilustrativos, sirven sólo como ejemplos.
 
