@@ -1,20 +1,15 @@
-.. Documentação Ustore documentation master file, created by
-   sphinx-quickstart on Wed Jul 27 14:23:54 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Bem vindo ao site de documentação da Ustore Brasil
+==================================================
 
-Welcome to Documentação Ustore's documentation!
-===============================================
+Neste repositório estão disponíveis somente os manuais de uso (Manual de Usuário) e a documentação de Release Notes dos softwares da Ustore.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 5
+   :hidden:
+   :caption: Teste Documentos:
 
+Teste Documentos
+================
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Documentos
+~~~~~~~~~~

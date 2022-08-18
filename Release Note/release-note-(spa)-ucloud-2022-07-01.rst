@@ -178,7 +178,7 @@ Para ejemplificar una forma de cobrar por la "oferta de servicio" de Gestión Ce
 
 En el portal, los Tiers se clasifican en los niveles A a J (1 a 10) y se calculan en función de las reglas establecidas mediante dos parámetros: - Un determinado número de máquinas virtuales genera un determinado coste máximo *(número de máquinas frente a coste/valor)*. En el caso de una cuenta creada, al alcanzar uno de los parámetros, inmediatamente, la aplicación escala al siguiente nivel. A continuación, se describen los niveles de los Tiers:
 
-+---------+
++--------------------+--------+--------+--------+--------+--------+---------+---------+---------+---------+---------+
 | **Tier**           |  **A** |  **B** |  **C** |  **D** | **E**  |  **F**  |  **G**  |  **H**  |  **I**  |  **J**  |
 +====================+========+========+========+========+========+=========+=========+=========+=========+=========+
 || **Quantidade de** ||       ||       ||       ||       ||       ||        ||        ||        ||        ||        |
